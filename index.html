@@ -82,10 +82,10 @@
     var _gaq = [['_setAccount','UA-21629194-1'],['_trackPageview']];
     yepnope([
       {
-        load : 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.js',
+        load : 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js',
         complete : function () {
           if ( ! window.jQuery ) {
-            yepnope( '/js/libs/jquery-1.5.0.js' );
+            yepnope( '/js/libs/jquery-1.5.0.min.js' );
           }
         }
       },
@@ -98,7 +98,7 @@
       {
         load : 'ielt7!/js/libs/dd_belatedpng.js',
         callback : function () {
-          DD_belatedPNG.fix( '.png_bg' );
+            DD_belatedPNG.fix( '.png_bg' );
         }
       },
       {
