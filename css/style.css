@@ -279,6 +279,15 @@ header div.top {
   height:230px;
 }
 
+header div.sun {
+  width: 230px;
+  height: 60px;
+  margin: 0 auto;
+  position absolute;
+  top: 210px;
+  background-image: url(../images/bg_header_burst.png);
+}
+
 #description {
   margin: 50px 0 0;
   padding: 30px 0;
@@ -317,6 +326,27 @@ header div.top {
   background-image: url(../images/bg_banner.jpg);
   background-repeat: repeat-x;
 }
+
+#banner::-moz-selection { background: #F7F4DB; color:#FF6700; }
+#banner::selection { background:#F7F4DB; color:#FF6700; }
+
+
+
+#date {
+  padding: 20px 0;
+}
+
+#date time {
+  display: block;
+  font-family: 'txjsMediumItalic';
+  color: #F7F4DB;
+  font-size: 49px;
+  text-align: center;
+  text-shadow: 3px 3px 0 #7B3535;
+  opacity: 0.9;
+  letter-spacing: -2px;
+}
+
 
 .content {
   background-image: url(../images/bg_content.jpg);
