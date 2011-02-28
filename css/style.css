@@ -130,8 +130,8 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+::-moz-selection{ background: #FF6700; color:#fff; text-shadow: none; }
+::selection { background:#FF6700; color:#fff; text-shadow: none; }
 
 /* j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; }
@@ -163,13 +163,169 @@ a:hover { color: #036; }
 
 
 /**
- * Primary styles
+ * TXJS Styles
  *
- * Author: 
+ * Author: Alex Sexton
  */
 
+@font-face {
+    font-family: 'txjsRegularItalic';
+    src: url('fonts/txjs-rgit-webfont.eot');
+    src: url('fonts/txjs-rgit-webfont.eot?iefix') format('eot'),
+         url('fonts/txjs-rgit-webfont.woff') format('woff'),
+         url('fonts/txjs-rgit-webfont.ttf') format('truetype'),
+         url('fonts/txjs-rgit-webfont.svg#webfontiAAb6lKV') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
+@font-face {
+    font-family: 'txjsMediumItalic';
+    src: url('fonts/txjs-mdit-webfont.eot');
+    src: url('fonts/txjs-mdit-webfont.eot?iefix') format('eot'),
+         url('fonts/txjs-mdit-webfont.woff') format('woff'),
+         url('fonts/txjs-mdit-webfont.ttf') format('truetype'),
+         url('fonts/txjs-mdit-webfont.svg#webfont7mWjgxZu') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'txjsSemiBoldItalic';
+    src: url('fonts/txjs-sbit-webfont.eot');
+    src: url('fonts/txjs-sbit-webfont.eot?iefix') format('eot'),
+         url('fonts/txjs-sbit-webfont.woff') format('woff'),
+         url('fonts/txjs-sbit-webfont.ttf') format('truetype'),
+         url('fonts/txjs-sbit-webfont.svg#webfontgzGFSZUI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'txjsLight';
+    src: url('fonts/txjs-lg-webfont.eot');
+    src: url('fonts/txjs-lg-webfont.eot?iefix') format('eot'),
+         url('fonts/txjs-lg-webfont.woff') format('woff'),
+         url('fonts/txjs-lg-webfont.ttf') format('truetype'),
+         url('fonts/txjs-lg-webfont.svg#webfont1amFVLmz') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'txjsMedium';
+    src: url('fonts/txjs-md-webfont.eot');
+    src: url('fonts/txjs-md-webfont.eot?iefix') format('eot'),
+         url('fonts/txjs-md-webfont.woff') format('woff'),
+         url('fonts/txjs-md-webfont.ttf') format('truetype'),
+         url('fonts/txjs-md-webfont.svg#webfont8lmowCzU') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'txjsRegular';
+    src: url('fonts/txjs-rg-webfont.eot');
+    src: url('fonts/txjs-rg-webfont.eot?iefix') format('eot'),
+         url('fonts/txjs-rg-webfont.woff') format('woff'),
+         url('fonts/txjs-rg-webfont.ttf') format('truetype'),
+         url('fonts/txjs-rg-webfont.svg#webfontGwN6E7Bx') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  background-image: url(../images/bg_body.jpg);
+  background-repeat: repeat;
+  font-family: 'txjsRegular', Arial;
+}
+
+.site-width {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#home {
+  display: block;
+  width: 213px;
+  height: 230px;
+  float: left;
+}
+#home a {
+  display: block;
+  width: 180px;
+  text-indent:-10000px;
+  height: 180px;
+  margin: 50px 0 0 33px;
+  background-repeat: no-repeat;
+  background-image: url(../images/logo_txjs.png);
+}
+
+header.top {
+  background-image: url(../images/bg_header_tile.jpg);
+  background-repeat: repeat;
+  height: 270px;
+}
+
+header div.top {
+  background-image: url(../images/bg_header_tile_grad.jpg);
+  background-repeat: repeat-x;
+  height:230px;
+}
+
+#description {
+  margin: 50px 0 0;
+  padding: 30px 0;
+  width: 690px;
+  display: block;
+  height: 140px;
+  float: right;
+}
+
+#description h3 {
+  font-family: 'txjsLight';
+  font-size: 28px;
+  color: #333333;
+  text-align: right;
+  margin: 10px 0;
+  text-shadow: -1px 1px 0 #FFF;  
+}
+
+#description h4 {
+  font-family: 'txjsRegular';
+  font-size: 22px;
+  color: #333333;
+  text-align: right;
+  margin: 10px 2px 0 0;
+  letter-spacing:-1px;
+  text-shadow: -1px 1px 0 #FFF;
+}
+
+#description h4 a {
+  text-decoration: none;
+  color: #FF6700;
+}
+
+#banner {
+  background-color:#451F1F;
+  background-image: url(../images/bg_banner.jpg);
+  background-repeat: repeat-x;
+}
+
+.content {
+  background-image: url(../images/bg_content.jpg);
+  background-repeat: repeat;
+}
+
+#site-container {
+  
+}
 
 
 
