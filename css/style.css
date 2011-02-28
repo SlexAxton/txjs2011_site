@@ -448,6 +448,10 @@ header div.sun {
   margin-top: 2px;
 }
 
+#speakers ul li em {
+  font-family: 'txjsRegularItalic';
+}
+
 .outer-shout {
   display: none;
 }
