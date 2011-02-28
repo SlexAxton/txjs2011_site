@@ -44,7 +44,7 @@
     <section id="banner">
       <div class="site-width">
         <h2 id="date"><time datetime="2011-06-11">Saturday, June 11 2011</time></h2>
-        <div id="location" class="adr">
+        <div id="location" class="adr pngfix">
           <div class="street-address">320 E 6th St</div>
           <span class="locality">Austin</span>
           <span class="region">Texas</span>
@@ -52,35 +52,41 @@
           <div class="country-name">U.S.A.</div>
         </div>
       </div>
+      <div class="banner-divider">
+        <div class="point pngfix"></div>
+      </div>
     </section>
     <section id="speakers" class="content">
-      <span id="before-list">come see</span>
-      <ul class="site-width">
+      <span id="before-list" class="outer-shout">come see</span>
+      <ul class="site-width clearfix">
         <li>
-          <img src="/images/speaker_eich.jpg" alt="Brendan Eich" />
+          <img src="/images/speakers/photo_speaker_eich.jpg" alt="Brendan Eich" />
           <span class="speaker-name">Brendan Eich</span>
           <span class="speaker-description">CTO Mozilla, Creator of JS</span>
         </li>
         <li>
-          <img src="/images/speaker_russell.jpg" alt="Alex Russell" />
+          <img src="/images/speakers/photo_speaker_russell.jpg" alt="Alex Russell" />
           <span class="speaker-name">Alex Russell</span>
           <span class="speaker-description">Google, Dojo</span>
         </li>
         <li>
-          <img src="/images/speaker_crockford.jpg" alt="Douglas Crockford" />
+          <img src="/images/speakers/photo_speaker_crock.jpg" alt="Douglas Crockford" />
           <span class="speaker-name">Douglas Crockford</span>
           <span class="speaker-description">Yahoo, <em>The Good Parts</em></span>
         </li>
         <li>
-          <img src="/images/speaker_irish.jpg" alt="Paul Irish" />
+          <img src="/images/speakers/photo_speaker_irish.jpg" alt="Paul Irish" />
           <span class="speaker-name">Paul Irish</span>
           <span class="speaker-description">Google, jQuery, Modernizr</span>
         </li>
       </ul>
-      <span id="after-list">and more</span>
+      <span id="after-list" class="outer-shout">and more</span>
     </section>
     <section id="sponsors" class="site-width">
-      sponsors
+      <h3>Sponsors</h3>
+      <div class="sponsor-left">TXJS is made possible by our wonderful <span class="hide">sponsors.</span></div>
+      <div class="sponsor-right">Contact <a href="mailto:alexsexton@gmail.com">Alex Sexton</a> for sponsorship information.</div>
+      <ul id="sponsor-list"></ul>  
     </section>
   </div>
   <script>
