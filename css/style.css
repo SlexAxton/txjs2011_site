@@ -241,7 +241,7 @@ a:hover { color: #036; }
 }
 
 body {
-  background-image: url(../images/bg_body.jpg);
+  background-image: url(../bg_body.jpg);
   background-repeat: repeat;
   font-family: 'txjsRegular', Arial;
 }
@@ -322,7 +322,7 @@ header div.sun {
 
 #banner {
   background-color:#451F1F;
-  background-image: url(http://cdn.yayquery.com/txjs/images/bg_banner.jpg);
+  background-image: url(http://cdn.yayquery.com/txjs/bg_banner.jpg);
   background-repeat: repeat-x;
 }
 
@@ -342,7 +342,7 @@ header div.sun {
 }
 
 #location {
-  background-image: url(http://cdn.yayquery.com/txjs/images/bg_banner_location.png);
+  background-image: url(http://cdn.yayquery.com/txjs/bg_banner_location.png);
   background-repeat: no-repeat;
   width: 306px;
   height: 46px;
@@ -359,7 +359,7 @@ header div.sun {
   text-indent: -10000px;
   width: 28px;
   height: 28px;
-  background-image: url(http://cdn.yayquery.com/txjs/images/icon_star.png);
+  background-image: url(http://cdn.yayquery.com/txjs/icon_star.png);
   background-repeat: no-repeat;
   margin: -2px auto 0;
 }
@@ -394,14 +394,14 @@ header div.sun {
 }
 
 .banner-divider {
-  background-image: url(http://cdn.yayquery.com/txjs/images/bg_content_border.gif);
+  background-image: url(http://cdn.yayquery.com/txjs/bg_content_border.gif);
   background-repeat: repeat-x;
   height: 20px;
 }
 .banner-divider .point {
   width: 70px;
   height: 20px;
-  background-image: url(http://cdn.yayquery.com/txjs/images/bg_content_peak.png);
+  background-image: url(http://cdn.yayquery.com/txjs/bg_content_peak.png);
   background-repeat: no-repeat;
   margin: 0 auto;
 }
@@ -463,12 +463,12 @@ header div.sun {
 }
 
 .content {
-  background-image: url(http://cdn.yayquery.com/txjs/images/bg_content.jpg);
+  background-image: url(http://cdn.yayquery.com/txjs/bg_content.jpg);
   background-repeat: repeat;
 }
 
 #sponsors {
-  background-image: url(http://cdn.yayquery.com/txjs/images/bg_sponsor.png);
+  background-image: url(http://cdn.yayquery.com/txjs/bg_sponsor.png);
   background-repeat: no-repeat;
   padding-top: 5px;
   height: 200px;
@@ -496,7 +496,7 @@ header div.sun {
 .ie6 #sponsors,
 .ie7 #sponsors,
 .ie8 #sponsors {
-  background-image: url(http://cdn.yayquery.com/txjs/images/bg_sponsor_text.png);
+  background-image: url(http://cdn.yayquery.com/txjs/bg_sponsor_text.png);
 }
 
 .ie6 #sponsors h3,
