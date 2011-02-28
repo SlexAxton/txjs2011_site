@@ -493,15 +493,11 @@ header div.sun {
   opacity: 0.9;
 }
 
-.ie6 #sponsors,
-.ie7 #sponsors,
-.ie8 #sponsors {
+.no-csstransforms #sponsors {
   background-image: url(http://wcjroknvsy.cdn.tinycdn.com/txjs/bg_sponsor_text.png);
 }
 
-.ie6 #sponsors h3,
-.ie7 #sponsors h3,
-.ie8 #sponsors h3 {
+.no-csstransforms #sponsors h3 {
   display: none;
 }
 
