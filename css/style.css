@@ -241,7 +241,7 @@ a:hover { color: #036; }
 }
 
 body {
-  background-image: url(../bg_body.jpg);
+  background-image: url(http://cdn.yayquery.com/txjs/bg_body.jpg);
   background-repeat: repeat;
   font-family: 'txjsRegular', Arial;
 }
