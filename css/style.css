@@ -280,12 +280,11 @@ header div.top {
 }
 
 header div.sun {
-  width: 230px;
   height: 60px;
-  margin: 0 auto;
-  position absolute;
-  top: 210px;
+  margin-top: -20px;
   background-image: url(../images/bg_header_burst.png);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 #description {
