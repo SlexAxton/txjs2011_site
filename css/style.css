@@ -373,17 +373,24 @@ header div.sun {
   text-shadow: 2px 2px 0 #431B1B;
   letter-spacing: 2px;
 }
-
 #location .locality {
   float: left;
   display: block;
   margin-left: 50px;
 }
 
+.ie6 #location .locality {
+  margin-left: 25px;
+}
+
 #location .region {
   float: right;
   display: block;
   margin-right: 60px;
+}
+
+.ie6 #location .region {
+  margin-right: 30px;
 }
 
 .banner-divider {
