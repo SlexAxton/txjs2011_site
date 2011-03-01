@@ -475,7 +475,7 @@ header div.sun {
 }
 
 #sponsors {
-  background-image: url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_sponsor.png);
+  background-image: url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_sponsor_2.png);
   background-repeat: no-repeat;
   padding-top: 5px;
   height: 200px;
@@ -502,7 +502,7 @@ header div.sun {
 }
 
 .no-csstransforms #sponsors {
-  background-image: url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_sponsor_text.png);
+  background-image: url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_sponsor_text_2.png);
 }
 
 .no-csstransforms #sponsors h3 {
