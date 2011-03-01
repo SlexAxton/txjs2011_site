@@ -436,7 +436,7 @@ header div.sun {
 #speakers ul li img {
   padding: 3px;
   background-color: #FFFFFF;
-  border: 2px solid #C6B772;
+  border: 1px solid #C6B772;
   -moz-border-radius: 1px; 
   -webkit-border-radius: 1px; 
   border-radius: 2px;
@@ -457,9 +457,8 @@ header div.sun {
   display: block;
   text-align: center;
   font-family: 'txjsLight';
-  font-size: 15px;
+  font-size: 14px;
   color: #634129;
-  margin-top: 2px;
 }
 
 #speakers ul li em {
