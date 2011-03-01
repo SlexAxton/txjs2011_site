@@ -34,7 +34,7 @@
           <div id="description" class="right">
             <h3>Join us at the Alamo Drafthouse in downtown Austin for a day of
               JavaScript, hacking, and Southern Charm.</h3>
-            <h4>Follow <a href="http://twitter.com/txjs/images">@txjs</a> on twitter for 
+            <h4>Follow <a href="http://twitter.com/txjs">@txjs</a> on twitter for 
               registration info!</h4>
           </div>
         </div>
@@ -43,7 +43,7 @@
     </header>
     <section id="banner">
       <div class="site-width">
-        <h2 id="date"><time datetime="2011-06-11">Saturday, June 11 2011</time></h2>
+        <h2 id="date"><time datetime="2011-06-11">Saturday, June <span class="caps">11 2011</span></time></h2>
         <div id="location" class="adr pngfix">
           <div class="street-address">320 E 6th St</div>
           <span class="locality">Austin</span>
@@ -93,10 +93,10 @@
     var _gaq = [['_setAccount','UA-21629194-1'],['_trackPageview']];
     yepnope([
       {
-        load : 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js',
+        load : 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js',
         complete : function () {
           if ( ! window.jQuery ) {
-            yepnope( '/js/libs/jquery-1.5.0.min.js' );
+            yepnope( '/js/libs/jquery-1.5.1.min.js' );
           }
         }
       },

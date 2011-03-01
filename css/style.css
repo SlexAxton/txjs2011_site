@@ -302,17 +302,19 @@ header div.sun {
   color: #333333;
   text-align: right;
   margin: 10px 0;
-  text-shadow: -1px 1px 0 #FFF;  
+  text-shadow: 0 1px 0 #E4F4F7;
+  font-weight: normal;
+  
 }
 
 #description h4 {
-  font-family: 'txjsRegular';
   font-size: 22px;
   color: #333333;
   text-align: right;
   margin: 10px 2px 0 0;
-  letter-spacing:-1px;
-  text-shadow: -1px 1px 0 #FFF;
+  text-shadow: 0 1px 0 #E4F4F7;
+  font-weight: normal;
+  font-family: 'txjsMediumItalic';  
 }
 
 #description h4 a {
@@ -336,7 +338,7 @@ header div.sun {
   color: #F7F4DB;
   font-size: 49px;
   text-align: center;
-  text-shadow: 3px 3px 0 #7B3535;
+  text-shadow: 2px 2px 0 #451F1F, 4px 4px 0 #762F2F;
   opacity: 0.9;
   letter-spacing: -2px;
 }
@@ -366,12 +368,14 @@ header div.sun {
 
 #location .locality,
 #location .region {
-  font-family: 'txjsRegular';
-  font-size: 23px;
   color: #F7F4DB;
   text-transform: uppercase;
   text-shadow: 2px 2px 0 #431B1B;
-  letter-spacing: 2px;
+  font-size: 18px;
+  letter-spacing: 5px;
+  margin-top: 2px;
+  font-family: 'txjsLight';
+  
 }
 #location .locality {
   float: left;
@@ -386,11 +390,15 @@ header div.sun {
 #location .region {
   float: right;
   display: block;
-  margin-right: 60px;
+  margin-right: 58px;
 }
 
 .ie6 #location .region {
   margin-right: 30px;
+}
+
+.caps {
+  font-size: 95%;
 }
 
 .banner-divider {
@@ -491,6 +499,7 @@ header div.sun {
   -ms-transform: skew(0deg, -6deg);
   transform: skew(0deg, -6deg);
   opacity: 0.9;
+  text-shadow: 0 0 0.05em #73B9C4;
 }
 
 .no-csstransforms #sponsors {
