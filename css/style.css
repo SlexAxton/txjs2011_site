@@ -491,9 +491,10 @@ header div.sun {
   text-transform: uppercase;
   font-size: 20px;
   display: block;
+  float: left;
+  position: relative;
   text-align: center;
-  margin: 28px 430px;
-  padding-right: 31px;
+  margin: 29px 0 0 70px;
   width: 70px;
   letter-spacing: 1px;
   -moz-transform: skew(0deg, -6deg);
@@ -535,6 +536,10 @@ header div.sun {
   width: 360px;
 }
 
+#sponsors .sponsor-left,
+#sponsors .sponsor-right {
+  padding-top: 27px;
+}
 .ie6 #sponsors .sponsor-left,
 .ie6 #sponsors .sponsor-right,
 .ie7 #sponsors .sponsor-left, 
