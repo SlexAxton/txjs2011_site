@@ -536,9 +536,36 @@ header div.sun {
   text-decoration: none;
 }
 
+#sponsor-list {
+  list-style-type: none;
+  margin: 40px 0;
+}
 
+#sponsor-list li {
+  display: block;
+  float: left;
+  width: 170px;
+  margin: 50px 10px;
+}
 
+#sponsor-list li.tall {
+  margin: 0 15px;
+}
 
+#presby {
+  width: 170px;
+  height: 20px;
+  background-image: url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/logo_presby_bazaarvoice.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 237px;
+  margin-left: 43px;
+}
+
+#presby a {
+  text-indent: -10000px;
+  display: block;
+}
 
 
 
