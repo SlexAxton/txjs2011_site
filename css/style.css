@@ -323,7 +323,7 @@ header div.sun {
 }
 
 #description h4 a:hover {
-  /*color: #FF8533;*/
+  color: #FF8533;
 }
 
 #banner {
@@ -553,6 +553,10 @@ header div.sun {
   height: 75px;
   clear:both;
   display: block;
+}
+
+.ie #sponsor-banner {
+  height: 85px;
 }
 
 #sponsor-list {
