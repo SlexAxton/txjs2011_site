@@ -562,6 +562,14 @@ header div.sun {
   margin: 0 15px;
 }
 
+.ie #sponsor-list li {
+  margin-top: 65px;
+}
+
+.ie6 #sponsor-list li {
+  margin-left: 5px;
+  margin-right: 5px;
+
 #presby {
   width: 170px;
   height: 20px;
