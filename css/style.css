@@ -517,11 +517,11 @@ header div.sun {
   display: none;
 }
 
-#sponsors div {
+#sponsor-banner div {
   font-family: 'txjsRegularItalic';
   font-size: 15px;
   opacity: 0.9;
-  margin-top: 31px;
+  margin-top: 4px;
 }
 
 #sponsors .sponsor-left {
@@ -540,9 +540,13 @@ header div.sun {
   text-decoration: none;
 }
 
+#sponsor-banner {
+  height: 75px;
+}
+
 #sponsor-list {
   list-style-type: none;
-  margin: 40px 0;
+  margin: 0;
   clear: both;
   height: 250px;
 }
