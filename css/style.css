@@ -543,6 +543,8 @@ header div.sun {
 #sponsor-list {
   list-style-type: none;
   margin: 40px 0;
+  clear: both;
+  height: 250px;
 }
 
 #sponsor-list li {
