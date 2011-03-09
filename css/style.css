@@ -323,7 +323,7 @@ header div.sun {
 }
 
 #description h4 a:hover {
-  color: #FF8533;
+  /*color: #FF8533;*/
 }
 
 #banner {
@@ -556,14 +556,6 @@ header div.sun {
   margin: 0 15px;
 }
 
-.ie6 #sponsor-list li {
-  margin: 50px 5px;
-}
-
-.ie6 #sponsor-list li.tall {
-  margin: 0 7px;
-}
-
 #presby {
   width: 170px;
   height: 20px;
@@ -572,10 +564,6 @@ header div.sun {
   position: absolute;
   top: 237px;
   margin-left: 43px;
-}
-
-.ie6 #presby {
-  margin-left: 21px;
 }
 
 #presby a {
