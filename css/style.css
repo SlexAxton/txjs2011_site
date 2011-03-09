@@ -322,8 +322,12 @@ header div.sun {
   color: #FF6700;
 }
 
+#description h4 a:hover {
+  color: #FF8533;
+}
+
 #banner {
-  background-color:#451F1F;
+  background-color: #451F1F;
   background-image: url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_banner.jpg);
   background-repeat: repeat-x;
 }
@@ -552,6 +556,14 @@ header div.sun {
   margin: 0 15px;
 }
 
+.ie6 #sponsor-list li {
+  margin: 50px 5px;
+}
+
+.ie6 #sponsor-list li.tall {
+  margin: 0 7px;
+}
+
 #presby {
   width: 170px;
   height: 20px;
@@ -560,6 +572,10 @@ header div.sun {
   position: absolute;
   top: 237px;
   margin-left: 43px;
+}
+
+.ie6 #presby {
+  margin-left: 21px;
 }
 
 #presby a {
