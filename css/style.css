@@ -482,7 +482,7 @@ header div.sun {
   background-image: url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_sponsor_2.png);
   background-repeat: no-repeat;
   padding-top: 5px;
-  height: 200px;
+  height: 400px;
   color: #B8E9F1;
 }
 
@@ -535,6 +535,15 @@ header div.sun {
   width: 360px;
 }
 
+.ie6 #sponsors .sponsor-left,
+.ie6 #sponsors .sponsor-right,
+.ie7 #sponsors .sponsor-left, 
+.ie7 #sponsors .sponsor-right,
+.ie8 #sponsors .sponsor-left,
+.ie8 #sponsors .sponsor-right {
+  padding-top: 27px;
+}
+
 #sponsors div a {
   color: #FFFFFF;
   text-decoration: none;
@@ -542,6 +551,8 @@ header div.sun {
 
 #sponsor-banner {
   height: 75px;
+  clear:both;
+  display: block;
 }
 
 #sponsor-list {
@@ -562,14 +573,23 @@ header div.sun {
   margin: 0 15px;
 }
 
-.ie #sponsor-list li {
+.ie6 #sponsor-list li,
+.ie7 #sponsor-list li,
+.ie8 #sponsor-list li {
   margin-top: 65px;
+}
+.ie6 #sponsor-list li.tall,
+.ie7 #sponsor-list li.tall,
+.ie8 #sponsor-list li.tall {
+  margin-top: 25px;
 }
 
 .ie6 #sponsor-list li {
   margin-left: 9px;
   margin-right: 9px;
 }
+
+
 
 #presby {
   width: 170px;
@@ -581,8 +601,9 @@ header div.sun {
   margin-left: 43px;
 }
 
-.ie6 #presby {
-  margin-left: 10px;
+.ie6 #presby,
+.ie7 #presby {
+  margin-left: -170px;
 }
 
 #presby a {
