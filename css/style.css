@@ -544,6 +544,10 @@ header div.sun {
   height: 75px;
 }
 
+.ie #sponsor-banner {
+  height: 85px;
+}
+
 #sponsor-list {
   list-style-type: none;
   margin: 0;
@@ -582,7 +586,7 @@ header div.sun {
 }
 
 .ie6 #presby {
-  margin-left: 10px;
+  margin-left: -40px;
 }
 
 #presby a {
