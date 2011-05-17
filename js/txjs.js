@@ -224,7 +224,7 @@ jQuery.extend( jQuery.easing,
   // Tooltip
   $(function(){
     var tipwidth = $("td.break").first().outerWidth(),
-    tip = $("<div id='txtip' class='ui-tooltip ui-widget ui-widget-content'></div>").width(tipwidth).appendTo("body");
+    tip = $("<div id='txtip' class='ui-tooltip ui-widget ui-widget-content'></div>").width(tipwidth/2).appendTo("body");
     $("#schedule td:has(aside)")
     .each(function() {
       var t = $(this),
@@ -233,7 +233,6 @@ jQuery.extend( jQuery.easing,
         //f my life
         var pos = t.position()
         pos.top += t.outerHeight();
-        pos.left = t.closest("tr").children().eq(1).offset().left;
         tip.stop(1,1).html(tooltip).css(pos).animate({
           height:"show"
         },200,"easeInCirc");
