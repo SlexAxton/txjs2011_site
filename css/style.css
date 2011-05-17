@@ -1000,11 +1000,6 @@ header div.sun {
 /*	padding:8px;*/
 	position:absolute;
 	z-index:9999;
-
--o-box-shadow: 4px 4px 8px #66accc;
--webkit-box-shadow: 4px 4px 8px #66accc;
--moz-box-shadow: 4px 4px 8px #66accc;
-box-shadow: 4px 4px 8px #66accc;
 }
 
 /* Fades and background-images don't work well together in IE6, drop the image */
@@ -1136,7 +1131,8 @@ margin:0 0 -10px 0;
 #txtip {
 	position:absolute;
 	display:none;
-	width:500px;
-	background:#88CFFF;	
+	background:#FFF;
+	border: 1px solid #D0C8BD;
+	border-top: none;	
 }
 
