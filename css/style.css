@@ -584,7 +584,7 @@ header div.sun {
 }
 
 #spnsr-list li.tall {
-  margin: 0 15px;
+  margin: 8px 15px 0;
 }
 
 .ie6 #spnsr-list li,
@@ -1137,6 +1137,7 @@ margin:0 0 -10px 0;
 	font-size: 12px;	
 }
 
-#txtip p {
+#txtip p,
+#txtip ul {
 	margin-bottom: 10px;
 }
