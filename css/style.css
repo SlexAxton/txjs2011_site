@@ -88,7 +88,7 @@ ol { list-style-type: decimal; }
 nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
 
 small { font-size: 85%; }
-strong, th { font-weight: bold; }
+strong { font-weight: bold; }
 
 td { vertical-align: top; }
 
@@ -1024,42 +1024,64 @@ width: 960px;
 }
 
 #schedule table {
-font-size:90%;
-color:#000;
+	font-size:90%;
+	color:#000;
+	width: 100%;
+	height: 100%;
 }
 
 #schedule th,
 #schedule td {
-	padding:8px 4px;
-	border:1px solid #ccc;
+	padding: 10px;
+	border: 1px solid #C6B772;
+}
+
+#schedule td table td {
+	padding: 0;
+	border: none;
+}
+
+#schedule td table td.row-stack-top {
+	border-bottom: 1px solid #C6B772;
+	padding-bottom: 10px;
+}
+
+#schedule td table td.row-stack-bot {
+	padding-top: 10px;
 }
 
 #schedule th {
-vertical-align:middle;
+	vertical-align:middle;
+	font-family: 'txjsMediumItalic';
+	font-size: 12px;
+	background: transparent url(../images/bg_col_time.gif);
+}
+
+#schedule .col-time {
+	width: 10%;
+}
+
+#schedule .col-track {
+	width: 45%;
 }
 
 #schedule thead th {
-  background-color: #002655;
-  background-image: -moz-linear-gradient(top, #002655, #1C4980); /* FF3.6 */
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #002655),color-stop(1, #1C4980)); /* Saf4+, Chrome */
-
-
-	color:#fff;
+    background: #451F1F url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_banner.jpg) repeat-x;
+	color: #FFF;
+	text-transform: uppercase;
 }
-
-
-#schedule tbody tr:hover th {
-	background:rgb(237,237,237);
-	 }
 	
-#schedule tbody td:hover:not(.break) {
-	background:rgb(235,235,235);
+#schedule tbody td:hover:not(.two-col) {
+	background-color: #FFF;
 	 }
 
 #schedule tbody tr:nth-child(even){
-	background:rgb(240,240,240);
+	background: transparent url(../images/bg_table_row_alt.png);
 }
 
+#schedule tbody tr td table tbody tr {
+	background-image: none !important;
+}
 
 #schedule th, #schedule td {
 	
@@ -1073,13 +1095,26 @@ vertical-align:middle;
 background-color:#ccc;
 }
 
-#schedule .break {
-  background-color: #002655;
-  background-image: -moz-linear-gradient(top, #002655, #1C4980); /* FF3.6 */
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #002655),color-stop(1, #1C4980)); /* Saf4+, Chrome */
-	color:#fff;
+#schedule h4 {
+	font-weight: normal;
+	font-family: 'txjsRegular';
+	font-size: 16px;
+}
+
+#schedule h5 {
+	font-weight: normal;
+	font-family: 'txjsLight';
+	font-size: 14px;
+	color: #634129;
+}	
+
+#schedule .two-col {
 	text-align:center;
-	font-weight:bold;
+}
+
+#schedule .two-col-row {
+	background: transparent url(../images/bg_table_cell_hover.png);
+	cursor: default !important;
 }
 
 #schedule p {
