@@ -569,18 +569,28 @@ header div.sun {
   height: 85px;
 }
 
-#spnsr-list {
+#spnsr-list,
+#spnsr-list-2 {
   list-style-type: none;
   margin: 0;
   clear: both;
-  height: 250px;
 }
 
-#spnsr-list li {
+#spnsr-list-2 {
+	margin: 0 auto;
+	width: 760px;
+}
+
+#spnsr-list li,
+#spnsr-list-2 li {
   display: block;
   float: left;
   width: 170px;
-  margin: 50px 10px;
+  margin: 50px 10px 20px;
+}
+
+#spnsr-list-2 li {
+	margin-top: 0;
 }
 
 #spnsr-list li.tall {
@@ -592,18 +602,24 @@ header div.sun {
 .ie8 #spnsr-list li {
   margin-top: 65px;
 }
+
+.ie6 #spnsr-list-2 li,
+.ie7 #spnsr-list-2 li,
+.ie8 #spnsr-list-2 li {
+  margin-top: 15px;
+}
+
 .ie6 #spnsr-list li.tall,
 .ie7 #spnsr-list li.tall,
 .ie8 #spnsr-list li.tall {
   margin-top: 25px;
 }
 
-.ie6 #spnsr-list li {
+.ie6 #spnsr-list li,
+.ie6 #spnsr-list-2 li {
   margin-left: 9px;
   margin-right: 9px;
 }
-
-
 
 #presby {
   width: 170px;
