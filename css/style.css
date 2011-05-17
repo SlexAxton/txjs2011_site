@@ -1010,7 +1010,7 @@ header div.sun {
 body .ui-tooltip { border:0; }
 
 .ui-tooltip-content {
-	padding:8px;
+	padding: 10px;
 }
 
 #schedule {
@@ -1133,6 +1133,10 @@ margin:0 0 -10px 0;
 	display:none;
 	background:#FFF;
 	border: 1px solid #D0C8BD;
-	border-top: none;	
+	border-top: none;
+	font-size: 12px;	
 }
 
+#txtip p {
+	margin-bottom: 10px;
+}
