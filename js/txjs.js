@@ -224,15 +224,16 @@ jQuery.extend( jQuery.easing,
   // Tooltip
   $(function(){
     var tipwidth = $("td.break").first().outerWidth(),
-    tip = $("<div id='txtip' class='ui-tooltip ui-widget ui-widget-content'></div>").width(tipwidth/2).appendTo("body");
+    tip = $("<div id='txtip' class='ui-tooltip ui-widget ui-widget-content'></div>").width((tipwidth/2)-2).appendTo("body");
     $("#schedule td:has(aside)")
     .each(function() {
       var t = $(this),
       tooltip = t.find("aside").addClass("ui-tooltip-content").detach();
       t.hoverIntent(function(e) {
         //f my life
-        var pos = t.position()
-        pos.top += t.outerHeight();
+        var pos = t.position();
+        pos.left = pos.left + 1;
+        pos.top += t.outerHeight() - 1;
         tip.stop(1,1).html(tooltip).css(pos).animate({
           height:"show"
         },200,"easeInCirc");
