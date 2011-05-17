@@ -232,7 +232,7 @@ jQuery.extend( jQuery.easing,
       t.hoverIntent(function(e) {
         //f my life
         var pos = t.position();
-        pos.left = pos.left - 3;
+        pos.left = pos.left - 1;
         pos.top += t.outerHeight() - 1;
         tip.stop(1,1).html(tooltip).css(pos).animate({
           height:"show"
