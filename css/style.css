@@ -334,7 +334,19 @@ header div.sun {
 }
 
 #date {
-  padding: 20px 0 2px;
+  padding: 25px 0 2px;
+}
+
+h2.code {
+  display: block;
+  font-family: 'txjsMediumItalic';
+  color: #762F2F;
+  font-size: 49px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #F7F4DB, 2px 2px 0 #AD9D55;
+  opacity: 0.9;
+  letter-spacing: -3px;
+  margin-bottom: 25px;
 }
 
 #date time {
@@ -343,7 +355,7 @@ header div.sun {
   color: #F7F4DB;
   font-size: 49px;
   text-align: center;
-  text-shadow: 2px 2px 0 #451F1F, 4px 4px 0 #762F2F;
+  text-shadow: 2px 2px 0 #451F1F, 3px 3px 0 #893E3E;
   opacity: 0.9;
   letter-spacing: -2px;
 }
@@ -354,7 +366,7 @@ header div.sun {
   width: 306px;
   height: 46px;
   margin: 0 auto;
-  padding: 14px 0 1px 0;
+  padding: 14px 0 25px 0;
 }
 
 #location .street-address,
@@ -398,6 +410,19 @@ header div.sun {
   margin-right: 58px;
 }
 
+#info {
+	color: #C58383;
+	margin-bottom: 40px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+#info p {
+	float: left;
+    margin: 0 15px;
+    width: 210px;
+}
+
 .ie6 #location .region {
   margin-right: 30px;
 }
@@ -426,12 +451,12 @@ header div.sun {
 }
 
 #speakers {
-  padding: 17px 0;
+  padding: 25px 0;
 }
 
 #speakers ul {
   list-style-type: none;
-  
+  margin-bottom: 40px;
 }
 
 #speakers ul li {
@@ -482,9 +507,8 @@ header div.sun {
 }
 
 #spnsrs {
-  background-image: url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_sponsor_2.png);
-  background-repeat: no-repeat;
-  padding-top: 5px;
+  background: transparent url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_sponsor_2.png) no-repeat 0 25px;
+  padding-top: 30px;
   height: 300px;
   color: #B8E9F1;
 }
@@ -1039,6 +1063,7 @@ width: 960px;
 	color:#000;
 	width: 100%;
 	height: 100%;
+	margin-bottom: 25px;
 }
 
 #schedule th,
@@ -1078,7 +1103,7 @@ width: 960px;
 
 #schedule thead th {
     background: #451F1F url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_banner.jpg) repeat-x;
-	color: #FFF;
+	color: #F7F4DB;
 	text-transform: uppercase;
 }
 	
