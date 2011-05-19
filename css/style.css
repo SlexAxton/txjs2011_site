@@ -1082,7 +1082,8 @@ width: 960px;
 	text-transform: uppercase;
 }
 	
-#schedule tbody td:hover:not(.two-col) {
+#schedule tbody td:hover:not(.two-col),
+#schedule tbody td.hover {
 	background-color: #FFF;
 	 }
 
