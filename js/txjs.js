@@ -151,16 +151,24 @@ jQuery.extend( jQuery.easing,
     setNavPos( 0 );
 
     var win = $( window ),
+        doc = $( document ),
         winH = win.height();
 
     function pickSpot() {
       var pos = win.scrollTop(),
-          best = 0;
-      $.each( positions, function ( i , pObj ) {
-        if ( pos > ( pObj.top - winH + 250 ) ) {
-          best = i;
-        }
-      });
+          best = 0,
+          tote = doc.height() - win.height();
+
+      if ( pos === tote ) {
+        best = positions.length - 1;
+      }
+      else {
+        $.each( positions, function ( i , pObj ) {
+          if ( pos > ( pObj.top - 100 ) ) {
+            best = i;
+          }
+        });
+      }
       setNavPos( best );
     }
 
