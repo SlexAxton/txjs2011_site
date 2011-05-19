@@ -334,7 +334,7 @@ header div.sun {
 }
 
 #date {
-  padding: 25px 0 2px;
+  padding: 40px 0 2px;
 }
 
 h2.code {
@@ -411,8 +411,9 @@ h2.code {
 }
 
 #info {
-	color: #C58383;
-	margin-bottom: 40px;
+	width: 960px;
+	color: #634129;
+	margin: 0 auto 40px;
 	overflow: hidden;
 	zoom: 1;
 }
@@ -421,6 +422,9 @@ h2.code {
 	float: left;
     margin: 0 15px;
     width: 210px;
+    padding: 15px 0;
+    border-top: 4px double #CCCCCC;
+    border-bottom: 4px double #CCCCCC;
 }
 
 .ie6 #location .region {
@@ -450,25 +454,25 @@ h2.code {
   border-bottom: 4px solid #4F7A83;
 }
 
-#speakers {
-  padding: 25px 0;
+#info-content {
+  padding: 40px 0;
 }
 
-#speakers ul {
+#banner ul {
   list-style-type: none;
   margin-bottom: 40px;
 }
 
-#speakers ul li {
+#banner ul li {
   display: block;
   width: 240px;
   float: left;
 }
 
-#speakers ul li img {
+#banner ul li img {
   padding: 3px;
-  background-color: #FFFFFF;
-  border: 1px solid #C6B772;
+  background-color: #F7F4DB;
+  border: 1px solid #000;
   -moz-border-radius: 1px; 
   -webkit-border-radius: 1px; 
   border-radius: 2px;
@@ -476,24 +480,24 @@ h2.code {
   margin: 0 auto;
 }
 
-#speakers ul li .speaker-name {
+#banner ul li .speaker-name {
   display: block;
   text-align: center;
   font-family: 'txjsRegular';
   font-size: 17px;
-  color: #FF6700;
+  color: #FFF;
   margin-top: 4px;
 }
 
-#speakers ul li .speaker-description {
+#banner ul li .speaker-description {
   display: block;
   text-align: center;
   font-family: 'txjsLight';
   font-size: 14px;
-  color: #634129;
+  color: #FF6700;
 }
 
-#speakers ul li em {
+#banner ul li em {
   font-family: 'txjsRegularItalic';
 }
 
@@ -1063,7 +1067,7 @@ width: 960px;
 	color:#000;
 	width: 100%;
 	height: 100%;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 }
 
 #schedule th,
