@@ -84,7 +84,7 @@ jQuery.extend( jQuery.easing,
       }
     });
 
-    var nav    = $('#follow-nav'),
+    /*var nav    = $('#follow-nav'),
         btns   = nav.children('ul').children('li'),
         slider = $('<div class="navSlider"></div>'),
         mark   = $('<div class="navMark"></div>');
@@ -173,6 +173,6 @@ jQuery.extend( jQuery.easing,
     }
 
     win.scroll($.debounce( 50, pickSpot));
-    pickSpot();
+    pickSpot();*/
   });
 })( jQuery );
