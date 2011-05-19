@@ -1,46 +1,5 @@
 (function(a){function f(a){b.push(a.which),b.join(",").indexOf(c)>-1&&($(d).unbind("keydown",f),function(){if(!window||!window.history||!window.history.replaceState)return!1;var a=0,b=e("nIpeeD' edoC nopuoC esU oT elpoeP 05 tsriF ehT---")+e("---.elas no og stekcit nehw tnuocsid a teg lliw 'traeHehT"),c=setInterval(function(){var d=b.substring(a)+b.substring(0,a);d=d.replace(/ /g,"-"),window.history.replaceState("","scroller","/"+d),a++,a===b.length&&clearInterval(c)},100)}())}function e(a){return a.split("").reverse().join("")}var b=[],c="38,38,40,40,37,39,37,39,66,65",d=document;$(d).keydown(f)})(this);
-
-
-/*
- * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
- *
- * Uses the built in easing capabilities added In jQuery 1.1
- * to offer multiple easing options
- *
- * TERMS OF USE - jQuery Easing
- * 
- * Open source under the BSD License. 
- * 
- * Copyright Â© 2008 George McGinley Smith
- * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, 
- * are permitted provided that the following conditions are met:
- * 
- * Redistributions of source code must retain the above copyright notice, this list of 
- * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list 
- * of conditions and the following disclaimer in the documentation and/or other materials 
- * provided with the distribution.
- * 
- * Neither the name of the author nor the names of contributors may be used to endorse 
- * or promote products derived from this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
- * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
- * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
- *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
- * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
- * OF THE POSSIBILITY OF SUCH DAMAGE. 
- *
-*/
-
-// t: current time, b: begInnIng value, c: change In value, d: duration
 jQuery.easing['jswing'] = jQuery.easing['swing'];
-
 jQuery.extend( jQuery.easing,
 {
 	def: 'easeOutQuad',
@@ -173,53 +132,8 @@ jQuery.extend( jQuery.easing,
 		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
 	}
 });
-
-/*
- *
- * TERMS OF USE - EASING EQUATIONS
- * 
- * Open source under the BSD License. 
- * 
- * Copyright Â© 2001 Robert Penner
- * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, 
- * are permitted provided that the following conditions are met:
- * 
- * Redistributions of source code must retain the above copyright notice, this list of 
- * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list 
- * of conditions and the following disclaimer in the documentation and/or other materials 
- * provided with the distribution.
- * 
- * Neither the name of the author nor the names of contributors may be used to endorse 
- * or promote products derived from this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
- * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
- * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
- *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
- * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
- * OF THE POSSIBILITY OF SUCH DAMAGE. 
- *
- */
-
-
-/**
-* hoverIntent r5 // 2007.03.27 // jQuery 1.1.2+
-* <http://cherne.net/brian/resources/jquery.hoverIntent.html>
-* 
-* @param  f  onMouseOver function || An object with configuration options
-* @param  g  onMouseOut function  || Nothing (use configuration options object)
-* @author    Brian Cherne <brian@cherne.net>
-*/
 (function($){$.fn.hoverIntent=function(f,g){var cfg={sensitivity:7,interval:100,timeout:0};cfg=$.extend(cfg,g?{over:f,out:g}:f);var cX,cY,pX,pY;var track=function(ev){cX=ev.pageX;cY=ev.pageY;};var compare=function(ev,ob){ob.hoverIntent_t=clearTimeout(ob.hoverIntent_t);if((Math.abs(pX-cX)+Math.abs(pY-cY))<cfg.sensitivity){$(ob).unbind("mousemove",track);ob.hoverIntent_s=1;return cfg.over.apply(ob,[ev]);}else{pX=cX;pY=cY;ob.hoverIntent_t=setTimeout(function(){compare(ev,ob);},cfg.interval);}};var delay=function(ev,ob){ob.hoverIntent_t=clearTimeout(ob.hoverIntent_t);ob.hoverIntent_s=0;return cfg.out.apply(ob,[ev]);};var handleHover=function(e){var p=(e.type=="mouseover"?e.fromElement:e.toElement)||e.relatedTarget;while(p&&p!=this){try{p=p.parentNode;}catch(e){p=this;}}if(p==this){return false;}var ev=jQuery.extend({},e);var ob=this;if(ob.hoverIntent_t){ob.hoverIntent_t=clearTimeout(ob.hoverIntent_t);}if(e.type=="mouseover"){pX=ev.pageX;pY=ev.pageY;$(ob).bind("mousemove",track);if(ob.hoverIntent_s!=1){ob.hoverIntent_t=setTimeout(function(){compare(ev,ob);},cfg.interval);}}else{$(ob).unbind("mousemove",track);if(ob.hoverIntent_s==1){ob.hoverIntent_t=setTimeout(function(){delay(ev,ob);},cfg.timeout);}}};return this.mouseover(handleHover).mouseout(handleHover);};})(jQuery);
-
-
-
+(function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};$.debounce=function(d,e,f){return f===c?a(d,e,false):a(d,f,e!==false)}})(this);
 (function($){
   // Tooltip
   $(function(){
@@ -245,5 +159,68 @@ jQuery.extend( jQuery.easing,
       });
 
     });
+
+    var nav    = $('#follow-nav'),
+        btns   = nav.children('ul').children('li'),
+        slider = $('<div class="navSlider"></div>'),
+        mark   = $('<div class="navMark"></div>');
+
+    // Put one in the other
+    slider.append( mark );
+
+    // Default to position 0;
+    slider.data( 'pos', 0 );
+    nav.append( slider );
+
+    var w       = slider.width(),
+        count   = btns.length,
+        singleW = w / count,
+        offW    = singleW / 2,
+        markOff = mark.outerWidth() / 2;
+
+    function setNavPos( pos ) {
+      slider.data( 'pos', pos );
+      mark.animate({
+        'margin-left' : ( ( ( pos * singleW ) + offW ) - ( markOff ) ) + 'px',
+      }, 300, 'swing' );
+    }
+
+    var positions = [],
+        pHash = {},
+        $body = $( 'body' );
+
+    btns.find( 'a' ).each(function ( i ) {
+      $( this ).data( 'pos', i );
+      var coid = $( this ).data( 'coid' ),
+          off = $( coid ).offset().top;
+      positions.push( { top: off, id: coid } );
+      pHash[ coid ] = off;
+    }).click(function () {
+      var $this = $( this );
+      setNavPos( $this.data( 'pos' ) );
+      $body.animate({
+        scrollTop : (pHash[ $this.data( 'coid' ) ] - 100) + 'px'
+      }, 300, 'swing');
+      return false;
+    });
+
+    setNavPos( 0 );
+
+    var win = $( window ),
+        winH = win.height();
+
+    function pickSpot() {
+      var pos = win.scrollTop(),
+          best = 0;
+      $.each( positions, function ( i , pObj ) {
+        if ( pos > ( pObj.top - winH + 250 ) ) {
+          best = i;
+        }
+      });
+      setNavPos( best );
+    }
+
+    win.scroll($.debounce( 50, pickSpot));
+    pickSpot();
   });
 })( jQuery );

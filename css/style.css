@@ -1157,3 +1157,49 @@ margin:0 0 -10px 0;
 #txtip ul {
 	margin-bottom: 10px;
 }
+
+#follow-nav {
+  width: 960px;
+  margin: 0 auto;
+}
+#follow-nav ul {
+  list-style-type: none;
+  width: 450px;
+  position: fixed;
+  top: 20px;
+  margin-left: 510px;
+  background-color: #EEEEEE;
+  z-index: 9999;
+}
+#follow-nav ul li {
+  display: block;
+  float: left;
+  border: 1px solid red;
+  text-align: center;
+  width: 128px;
+  padding: 10px;
+}
+#follow-nav ul li a {
+  display: block;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+}
+.navSlider {
+  border: 1px solid black;
+  padding: 2px 0;
+  width: 448px;
+  position: fixed;
+  margin-left: 510px;
+  top: 62px;
+  background-color: #EEEEEE;
+  z-index: 10000;
+}
+.navMark {
+  width: 10px;
+  height: 10px;
+  float: left;
+  border: 1px solid green;
+  position: relative;
+  z-index: 10001;
+}

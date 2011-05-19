@@ -23,12 +23,19 @@
       <li><a href="#date">Date</a></li>
       <li><a href="#location">Location</a></li>
       <li><a href="#speakers">Speakers</a></li>
-      <li><a href="#spnsrs">spnsrs</a></li>
+      <li><a href="#spnsrs">Sponsors</a></li>
     </ul>
   </nav>
   <div id="site-container">
     <header class="top">
       <div class="top">
+        <nav id="follow-nav">
+          <ul>
+            <li><a href="#info" data-coid="#info">Info</a></li>
+            <li><a href="#schedule" data-coid="#schedule">Schedule</a></li>
+            <li><a href="#spnsrs" data-coid="#spnsrs">Sponsors</a></li>
+          </ul>
+        </nav>
         <div class="site-width">
           <h1 id="home"><a class="pngfix" href="#" title="TXJS - Texas JavaScript Conference">TXJS</a></h1>
           <h5 id="presby"><a href="http://www.bazaarvoice.com/about/jobs">Presented by Bazaarvoice</a></h5>
@@ -51,6 +58,33 @@
           <span class="region">Texas</span>
           <span class="postal-code">78701</span>
           <div class="country-name">U.S.A.</div>
+        </div>
+        <div id="info">
+          <p>Etizzle fizzle urna izzle nisl. Dope quizzle arcu. Maecenas crunk, ipsizzle fo shizzle malesuada 
+          get down get down, nulla check it out my shizz check it out, et luctizzle metizzle owned et own yo'. 
+          Vivamizzle ullamcorpizzle, tortizzle check out this varizzle , mammasay mammasa mamma oo sa nunc 
+          ultricies turpis, izzle luctus leo funky fresh izzle dolor. Its fo rizzle crazy, orci vizzle 
+          volutpizzle i saw beyonces tizzles and my pizzle went crizzle, sizzle augue hizzle boom shackalack, 
+          funky fresh bibendizzle enim izzle nisl. Nullizzle black velizzle shizzlin dizzle orci eleifend its 
+          fo rizzle. Shiznit fo shizzle nibh. Curabitizzle non velit check it out pede gangsta facilisizzle. 
+          Shizznit da bomb own yo', fo shizzle bling bling, gizzle sed, egestas fo shizzle, erizzle. Away vitae 
+          turpis fizzle nibh bibendizzle fo shizzle. Nizzle sizzle consectetuer yo mamma. Aliquam erat 
+          volutpizzle. Nunc izzle fo shizzle mammasay mammasa mamma oo sa funky fresh pretium mammasay mammasa 
+          mamma oo sa. Owned go to hizzle lacizzle gizzle dui bizzle ultricies. Yippiyo nisl. We gonna chung 
+          izzle check it out. Integizzle fo shizzle ipsizzle sure mi. Donizzle izzle fo shizzle my nizzle.</p>
+
+          <p>Etizzle fizzle urna izzle nisl. Dope quizzle arcu. Maecenas crunk, ipsizzle fo shizzle malesuada 
+          get down get down, nulla check it out my shizz check it out, et luctizzle metizzle owned et own yo'. 
+          Vivamizzle ullamcorpizzle, tortizzle check out this varizzle , mammasay mammasa mamma oo sa nunc 
+          ultricies turpis, izzle luctus leo funky fresh izzle dolor. Its fo rizzle crazy, orci vizzle 
+          volutpizzle i saw beyonces tizzles and my pizzle went crizzle, sizzle augue hizzle boom shackalack, 
+          funky fresh bibendizzle enim izzle nisl. Nullizzle black velizzle shizzlin dizzle orci eleifend its 
+          fo rizzle. Shiznit fo shizzle nibh. Curabitizzle non velit check it out pede gangsta facilisizzle. 
+          Shizznit da bomb own yo', fo shizzle bling bling, gizzle sed, egestas fo shizzle, erizzle. Away vitae 
+          turpis fizzle nibh bibendizzle fo shizzle. Nizzle sizzle consectetuer yo mamma. Aliquam erat 
+          volutpizzle. Nunc izzle fo shizzle mammasay mammasa mamma oo sa funky fresh pretium mammasay mammasa 
+          mamma oo sa. Owned go to hizzle lacizzle gizzle dui bizzle ultricies. Yippiyo nisl. We gonna chung 
+          izzle check it out. Integizzle fo shizzle ipsizzle sure mi. Donizzle izzle fo shizzle my nizzle.</p>
         </div>
       </div>
       <div class="banner-divider">
@@ -412,10 +446,10 @@
     var _gaq = [['_setAccount','UA-21629194-1'],['_trackPageview']];
     yepnope([
       {
-        load : 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js',
+        load : 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js',
         complete : function () {
           if ( ! window.jQuery ) {
-            yepnope( '/js/libs/jquery-1.6.0.min.js' );
+            yepnope( '/js/libs/jquery-1.6.1.min.js' );
           }
         }
       },
