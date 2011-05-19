@@ -297,7 +297,8 @@
           		<h5>Choose Your Own Mobile App Framework Adventure</h5>
           	</hgroup>
           	<a href="http://spkr8.com/t/7481">spkr8.com/t/7481</a> 
-            <aside> 
+            <aside>
+            <p>Tweets at @joemccann</p>
             <p>This whole mobile internet thing is probably gonna work out, but you may be asking yourself, with all the various ways of building mobile apps with web technologies, which one is right for me? There are so many choices, how does one choose?!</p>
             <p>Don't fret! Like the <a href="http://en.wikipedia.org/wiki/The_Hardy_Boys">Hardy Boys</a>, we will choose the right path to end up with the right framework for your design and development style.</p>
           <p>The frameworks we'll cover include:</p>
@@ -342,7 +343,7 @@
           <td>
           	<hgroup>
           		<h4>Andrew Dupont</h4>
-          		<h5>The State of Animation in 2011</h5>
+                        <h5>The State of Animation in 2011</h5>
           	</hgroup>
           	<a href="http://spkr8.com/t/7483">spkr8.com/t/7483</a> 
             <aside> 
@@ -447,7 +448,7 @@
     var _gaq = [['_setAccount','UA-21629194-1'],['_trackPageview']];
     yepnope([
       {
-        load : 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js',
+        load : '//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js',
         complete : function () {
           if ( ! window.jQuery ) {
             yepnope( '/js/libs/jquery-1.6.1.min.js' );
@@ -467,6 +468,12 @@
         load : 'http://www.google-analytics.com/ga.js'
       }
     ]);
+  </script>
+  <script src="//platform.twitter.com/anywhere.js?id=enoF825zykKmnqiyHPTgw&v=1"></script>
+  <script>
+    twttr.anywhere(function(twitter) {
+      twitter.hovercards();
+    });
   </script>
 <!--
 And Always Remember:
