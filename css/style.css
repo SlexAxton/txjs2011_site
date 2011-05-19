@@ -1174,13 +1174,13 @@ background-color:#ccc;
 	font-weight: normal;
 	font-family: 'txjsRegular';
 	font-size: 16px;
+        color: #762F2F;
 }
 
 #schedule h5 {
 	font-weight: normal;
 	font-family: 'txjsLight';
 	font-size: 14px;
-	color: #634129;
 	margin-bottom: 5px;
 }	
 
