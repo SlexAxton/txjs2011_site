@@ -339,7 +339,19 @@ header div.sun {
 
 #info header,
 #schedule header {
-	background: transparent url(../images/bg_col_time.gif);
+	background: transparent url(../images/bg_h2_right.gif) no-repeat right top;
+}
+
+#info h2,
+#schedule h2 {
+	background: transparent url(../images/bg_h2_left.gif) no-repeat;
+	padding: 0 64px;
+}
+
+#info h2 span,
+#schedule h2 span {
+	display: block;
+	background: transparent url(../images/bg_h2.gif) repeat-x;
 }
 
 h2.code {
