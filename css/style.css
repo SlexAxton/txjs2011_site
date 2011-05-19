@@ -1263,6 +1263,7 @@ margin:0 0 -10px 0;
   margin-left: 4px;
   width: 16px;
   height: 16px;
+  color:#FFF;
   color: transparent;
   display: inline-block;
   overflow: hidden;
@@ -1280,6 +1281,7 @@ margin:0 0 -10px 0;
   height:16px;
   width: 16px;
   color: transparent;
+  text-indent:-1000px;
 }
 .twttr a:hover {
   color: transparent;
