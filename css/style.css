@@ -354,6 +354,20 @@ header div.sun {
 	background: transparent url(../images/bg_h2.gif) repeat-x;
 }
 
+#info h3 {
+	text-align: center;
+	padding: 0 0 20px;
+	font-family: 'txjsMediumItalic';
+	font-weight: normal;
+	font-size: 12px;
+	text-transform: uppercase;
+	float: left;
+	width: 50%;
+	border-bottom: 4px double #D0C8BD;
+	margin-bottom: 25px;
+	color: #762F2F;
+}
+
 h2.code {
   display: block;
   font-family: 'txjsMediumItalic';
@@ -430,7 +444,7 @@ h2.code {
 #info {
 	width: 960px;
 	color: #634129;
-	margin: 0 auto 40px;
+	margin: 0 auto 60px;
 	overflow: hidden;
 	zoom: 1;
 }
@@ -439,6 +453,7 @@ h2.code {
 	float: left;
     width: 210px;
     padding: 0 15px 15px;
+    color: #000000;
 }
 
 .ie6 #location .region {
@@ -469,7 +484,7 @@ h2.code {
 }
 
 #info-content {
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 #banner ul {
@@ -491,7 +506,7 @@ h2.code {
   -webkit-border-radius: 1px; 
   border-radius: 2px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 15px;
 }
 
 #banner ul li .speaker-name {
@@ -1166,6 +1181,7 @@ background-color:#ccc;
 	font-family: 'txjsLight';
 	font-size: 14px;
 	color: #634129;
+	margin-bottom: 5px;
 }	
 
 #schedule .two-col {
@@ -1187,6 +1203,18 @@ margin:0 0 -10px 0;
 
 #schedule tbody tr td {
 	cursor:pointer;
+}
+
+#schedule tbody tr td a {
+	background-image: url(../images/bullet_star.gif);
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+	padding-left: 14px;
+}
+
+#schedule tbody tr td hgroup a {
+	background-image: none;
+	padding-left: 0;
 }
 
 #schedule td aside {
