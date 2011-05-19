@@ -26,8 +26,7 @@ jQuery.extend( jQuery.easing,
   var outTimer, inTimer, out = false, bound = false;
   // Tooltip
   $(function(){
-    var tipwidth = $("td.break").first().outerWidth(),
-    tip = $("<div id='txtip' class='ui-tooltip ui-widget ui-widget-content'></div>").width((tipwidth/2)-1).appendTo("body");
+    tip = $("<div id='txtip' class='ui-tooltip ui-widget ui-widget-content'></div>").appendTo("body");
     $("#schedule td:has(aside)")
     .each(function() {
       var t = $(this),
@@ -39,10 +38,11 @@ jQuery.extend( jQuery.easing,
         }
         outTimer = setTimeout(function () {
           if ( ! out ) {
+            tip.width(t.outerWidth()-1);
             t.addClass('hover');
             out = that;
             var pos = t.position();
-            pos.left = pos.left - 1;
+            pos.left = pos.left - (( 'MozAppearance' in document.body.style ) ? 1 : 0 );
             pos.top += t.outerHeight() - 1;
             tip.stop(1,1).html(tooltip).css(pos).animate({
               height:"show"
