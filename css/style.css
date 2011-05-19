@@ -1229,3 +1229,27 @@ margin:0 0 -10px 0;
   position: relative;
   z-index: 10001;
 }
+
+.hover .twttr {
+  width: 16px;
+  height: 16px;
+  color: transparent;
+  display: inline-block;
+  overflow: hidden;
+  background-image: url(../images/twttricon.gif);
+  font-size:12px;
+  text-indent:-12px;
+}
+.twttr {
+  display: none;
+}
+
+.twttr a {
+  display: inline-block;
+  height:16px;
+  width: 16px;
+  color: transparent;
+}
+.twttr a:hover {
+  color: transparent;
+}
