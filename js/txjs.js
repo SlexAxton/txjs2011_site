@@ -185,9 +185,29 @@ jQuery.extend( jQuery.easing,
       }, 300, 'swing' );
     }
 
+    // Use the first element that is "scrollable"  (cross-browser fix?)
+    function scrollableElement(els) {
+      for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+        var el = arguments[i],
+        $scrollElement = $(el);
+        if ($scrollElement.scrollTop()> 0) {
+          return $scrollElement;
+        } else {
+          $scrollElement.scrollTop(1);
+          var isScrollable = $scrollElement.scrollTop()> 0;
+          $scrollElement.scrollTop(0);
+          if (isScrollable) {
+            return $scrollElement;
+          }
+        }
+      }
+      return [];
+    }
+    
+
     var positions = [],
         pHash = {},
-        $body = $( 'body' );
+        $scrollElem = scrollableElement( 'body', 'html' );
 
     btns.find( 'a' ).each(function ( i ) {
       $( this ).data( 'pos', i );
@@ -198,7 +218,7 @@ jQuery.extend( jQuery.easing,
     }).click(function () {
       var $this = $( this );
       setNavPos( $this.data( 'pos' ) );
-      $body.animate({
+      $scrollElem.animate({
         scrollTop : (pHash[ $this.data( 'coid' ) ] - 100) + 'px'
       }, 300, 'swing');
       return false;
