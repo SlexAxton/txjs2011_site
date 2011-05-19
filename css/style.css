@@ -337,6 +337,11 @@ header div.sun {
   padding: 40px 0 2px;
 }
 
+#info header,
+#schedule header {
+	background: transparent url(../images/bg_col_time.gif);
+}
+
 h2.code {
   display: block;
   font-family: 'txjsMediumItalic';
@@ -345,8 +350,8 @@ h2.code {
   text-align: center;
   text-shadow: 1px 1px 0 #F7F4DB, 2px 2px 0 #AD9D55;
   opacity: 0.9;
-  margin-bottom: 25px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 #date time {
@@ -420,12 +425,8 @@ h2.code {
 
 #info p {
 	float: left;
-    margin: 0 15px;
     width: 210px;
-    padding: 15px 0;
-    border-top: 4px double #D0C8BD;
-    border-bottom: 4px double #D0C8BD;
-    min-height: 178px;
+    padding: 15px;
 }
 
 .ie6 #location .region {
