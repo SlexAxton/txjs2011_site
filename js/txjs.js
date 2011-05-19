@@ -43,7 +43,7 @@ jQuery.extend( jQuery.easing,
             out = that;
             var pos = t.position();
             pos.left = pos.left - (( 'MozAppearance' in document.body.style ) ? 1 : 0 );
-            pos.top += t.outerHeight() - 1;
+            pos.top += t.outerHeight() - ( $(that).hasClass('doubleshot') ? 60 : 1 );
             tip.stop(1,1).html(tooltip).css(pos).animate({
               height:"show"
             },200,"easeInCirc");
