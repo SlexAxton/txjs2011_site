@@ -345,8 +345,8 @@ h2.code {
   text-align: center;
   text-shadow: 1px 1px 0 #F7F4DB, 2px 2px 0 #AD9D55;
   opacity: 0.9;
-  letter-spacing: -3px;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 #date time {
@@ -423,8 +423,9 @@ h2.code {
     margin: 0 15px;
     width: 210px;
     padding: 15px 0;
-    border-top: 4px double #CCCCCC;
-    border-bottom: 4px double #CCCCCC;
+    border-top: 4px double #D0C8BD;
+    border-bottom: 4px double #D0C8BD;
+    min-height: 178px;
 }
 
 .ie6 #location .region {
@@ -514,7 +515,7 @@ h2.code {
   background: transparent url(http://wcjroknvsy.cdn.tinycdn.com/txjs/images/bg_sponsor_2.png) no-repeat 0 25px;
   padding-top: 30px;
   height: 300px;
-  color: #B8E9F1;
+  color: #8CB2B9;
 }
 
 #spnsrs h3 {
@@ -534,7 +535,7 @@ h2.code {
   -ms-transform: skew(0deg, -6deg);
   transform: skew(0deg, -6deg);
   opacity: 0.9;
-  text-shadow: 0 0 0.05em #73B9C4;
+  text-shadow: 0 0 0.05em #7FA8AF;
 }
 
 .no-csstransforms #spnsrs {
@@ -583,8 +584,13 @@ h2.code {
 }
 
 #spnsrs div a {
-  color: #FFFFFF;
+  color: #8CB2B9;
   text-decoration: none;
+  border-bottom: 1px dotted #8CB2B9;
+}
+
+#spnsrs div a:hover {
+	color: #FFF;
 }
 
 #spnsr-banner {
