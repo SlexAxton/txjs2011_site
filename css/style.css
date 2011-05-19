@@ -1205,6 +1205,11 @@ margin:0 0 -10px 0;
 	cursor:pointer;
 }
 
+#schedule tbody tr td.row-stack-top {
+  border: 0;
+  border-right: 1px solid #D0C88D;
+}
+
 #schedule tbody tr td a {
 	background-image: url(../images/bullet_star.gif);
 	background-repeat: no-repeat;
